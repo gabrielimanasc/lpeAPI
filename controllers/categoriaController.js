@@ -1,4 +1,4 @@
-const { getCategoriasDB, addCategoriaDB, updateCategoriaDB, deleteCategoriaDB, getCategoriaPorCodigoDB } = require('../usecases/categoriaUseCases')
+const { getCategoriasDB, addCategoriaDB, updateCategoriaDB, deleteCategoriaDB, getCategoriaPorCodigoDB } = require('../usecases/categoriasUseCase')
 
 const addCategoria = async (request, response) => {
     await addCategoriaDB(request.body)
