@@ -17,7 +17,7 @@ if (isProduction) {
         host: 'localhost',
         database: 'eshoplpe',
         password: 'postgres',
-        por: 5432
+        port: 5432
     })
 }
 
