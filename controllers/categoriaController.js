@@ -1,5 +1,14 @@
 const { getCategoriasDB, addCategoriaDB, updateCategoriaDB, deleteCategoriaDB, getCategoriaPorCodigoDB } = require('../usecases/categoriasUseCase')
 
+const getCategorias = async (request, response) => {
+    await getCategoriasDB()
+        .then(data => response.status(200).json(data))
+        .catch(err => response.status(400).json({
+            status: 'error',
+            message: 'Erro ao consultar as categorias: ' + err
+        }));
+}
+
 const addCategoria = async (request, response) => {
     await addCategoriaDB(request.body)
         .then(data => response.status(200).json({
