@@ -6,7 +6,7 @@ let pool = null;
 
 if (isProduction) {
     pool = new Pool({
-        connectionString: procces.env.DATABASE_URL,
+        connectionString: 'postgres://vzelsics:Kw8Gd6cxDt5wif_LUTAIla1TOwoHJaEY@silly.db.elephantsql.com/vzelsics',
         ssl: {
             rejectUnauthorized: false
         }
