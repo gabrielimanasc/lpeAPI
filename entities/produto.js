@@ -4,7 +4,7 @@ class Produto {
         this.codigo = codigo;
         this.nome = nome;
         this.descricao = descricao;
-        this.tamnho = tamanho;
+        this.tamanho = tamanho;
         this.quantidade_estoque = quantidade_estoque;
         this.valor = valor;
         this.data_cadastro = data_cadastro;
